@@ -6,11 +6,8 @@
 //   RESEND_API_KEY     — secret API key from resend.com/api-keys
 //   RSVP_NOTIFY_EMAIL   — inbox that should receive each RSVP notification
 //
-// Without a verified sending domain on Resend, emails can only be delivered
-// to the address that owns the Resend account — so RSVP_NOTIFY_EMAIL must
-// match that account's email for now. Guest-facing confirmation emails are
-// intentionally not sent yet for the same reason; add that once a domain is
-// verified.
+// Sends from webify.joburg, a domain verified on this Resend account, so
+// notifications can go to any recipient (not just the account owner).
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -104,7 +101,7 @@ export default async function handler(req, res) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Y & M Wedding RSVP <onboarding@resend.dev>",
+        from: "Y & M Wedding RSVP <rsvp@webify.joburg>",
         to: notifyEmail,
         reply_to: email,
         subject: `RSVP — ${name} (${attendingWord})`,

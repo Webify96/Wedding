@@ -5,7 +5,7 @@
      CONFIG — edit these before sending invitations
      ========================================================= */
   var CONFIG = {
-    weddingDateISO: "2026-11-28T14:00:00", // ceremony date/time, used for countdown
+    weddingDateISO: "2026-11-28T13:00:00", // ceremony date/time, used for countdown
     coupleEmail: "mashinda.ndalamba@gmail.com", // mailto fallback if RSVP endpoint isn't live yet
     // Once Resend is wired up, point this at your real endpoint (e.g. an API route
     // that calls Resend to send/store the RSVP). Until then, submissions fall back
@@ -78,9 +78,25 @@
     "View gift details",
   );
 
-  // "View gallery" opens the lightbox at the first photo so guests can
-  // browse the full shoot — wired up below, once the lightbox exists.
-  var viewGalleryBtn = document.getElementById("viewGalleryBtn");
+  // "Our Engagement" album reveals the curated tile grid, which stays
+  // hidden until a guest chooses to open that album.
+  var engagementAlbumBtn = document.getElementById("engagementAlbumBtn");
+  var galleryGrid = document.getElementById("galleryGrid");
+  if (engagementAlbumBtn && galleryGrid) {
+    engagementAlbumBtn.addEventListener("click", function () {
+      var isHidden = galleryGrid.hasAttribute("hidden");
+      if (isHidden) {
+        galleryGrid.removeAttribute("hidden");
+        engagementAlbumBtn.classList.add("open");
+        engagementAlbumBtn.setAttribute("aria-expanded", "true");
+        galleryGrid.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      } else {
+        galleryGrid.setAttribute("hidden", "");
+        engagementAlbumBtn.classList.remove("open");
+        engagementAlbumBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   /* ================= FAQ accordion ================= */
   document.querySelectorAll(".faq-item").forEach(function (item) {
@@ -290,12 +306,6 @@
   lightboxBackdrop.addEventListener("click", closeLightbox);
   lightboxPrev.addEventListener("click", showPrev);
   lightboxNext.addEventListener("click", showNext);
-
-  if (viewGalleryBtn) {
-    viewGalleryBtn.addEventListener("click", function () {
-      openLightbox(GALLERY_PHOTOS[0].index);
-    });
-  }
 
   /* ================= Escape key closes any open overlay ================= */
   document.addEventListener("keydown", function (e) {

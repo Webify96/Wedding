@@ -61,16 +61,31 @@
       <div class="hero-media" aria-hidden="true">
         <img
           class="hero-photo"
-          src="css/img/web/hero.jpg"
+          src="css/img/web/full-12.jpg"
           alt=""
           fetchpriority="high"
         />
         <div class="hero-scrim"></div>
       </div>
 
+      <div class="hero-preamble">
+        <p class="hero-preamble-text">
+          Together with our families<br />
+          <span class="hero-preamble-accent"
+            >we invite you to celebrate the beginning to our forever.</span
+          >
+        </p>
+        <div class="divider">
+          <span></span
+          ><svg class="heart-icon" viewBox="0 0 24 24">
+            <path
+              d="M12 21s-7.5-4.8-10-9.6C.4 8 2 4 6 4c2.2 0 3.8 1.2 6 4 2.2-2.8 3.8-4 6-4 4 0 5.6 4 4 7.4C19.5 16.2 12 21 12 21z"
+            /></svg
+          ><span></span>
+        </div>
+      </div>
+
       <div class="hero-content">
-        <p class="eyebrow">Together with our families</p>
-        <h1 class="hero-title">Y <span class="amp">&amp;</span> M</h1>
         <p class="hero-sub">We're getting married</p>
         <div class="divider">
           <span></span
@@ -162,8 +177,8 @@
         <div class="story-media">
           <div class="story-image-frame">
             <img
-              src="css/img/web/story.jpg"
-              alt="The couple sharing a quiet forehead kiss in the woods"
+              src="css/img/web/full-10.jpg"
+              alt="The couple standing close together among the trees"
               loading="lazy"
             />
           </div>
@@ -175,14 +190,15 @@
         <p>
           We met on an ordinary day that turned out to be anything but. What
           started as a quiet friendship slowly grew into something neither of us
-          could have planned — but both of us are endlessly grateful for.
-          Through seasons of change, laughter, and learning, we found in each
-          other a steady kind of love: patient, honest, and rooted in faith.
+          could have planned, but something both of us are endlessly grateful
+          for. Through seasons of change, laughter, and learning, we found in
+          each other a steady kind of love: patient, honest, and rooted in
+          faith.
         </p>
         <p>
           Now, surrounded by the people who shaped us, we're ready to say "I do"
           and begin the next chapter — together. Thank you for being part of our
-          story so far, and for celebrating this next step with us.
+          story so far and for celebrating this next step with us.
         </p>
       </div>
     </section>
@@ -235,7 +251,7 @@
             />
           </svg>
           <p class="detail-label">Time</p>
-          <p class="detail-value">Ceremony at 14:00</p>
+          <p class="detail-value">Seating from 12:30<br />Ceremony at 13:00</p>
         </div>
         <div class="detail-item">
           <svg class="detail-icon" viewBox="0 0 24 24">
@@ -255,7 +271,16 @@
             />
           </svg>
           <p class="detail-label">Venue</p>
-          <p class="detail-value">MontMartre Chalets<br />Franschhoek</p>
+          <div class="detail-value venue-list">
+            <p class="venue-row">
+              <span class="venue-role">Ceremony</span>
+              <span class="venue-name">L'Hermitage Franschhoek</span>
+            </p>
+            <p class="venue-row">
+              <span class="venue-role">Reception</span>
+              <span class="venue-name">Montmartre Chalets &amp; Venue</span>
+            </p>
+          </div>
         </div>
         <div class="detail-item">
           <svg class="detail-icon" viewBox="0 0 24 24">
@@ -282,25 +307,102 @@
         <div class="details-full-inner">
           <h3>Ceremony &amp; Reception</h3>
           <p>
-            The ceremony will begin promptly at 14:00, followed by celebratory
-            drinks, photographs, and a seated reception dinner. Please plan to
-            arrive at least 30 minutes early to be seated.
+            Please be seated by 12:30 — the ceremony will begin promptly at
+            13:00, followed by celebratory drinks, photographs, and a seated
+            reception dinner.
           </p>
           <h3>Getting there</h3>
           <p>
-            MontMartre Chalets, Franschhoek — parking is available on-site. For
-            guests travelling from Cape Town, allow approximately 1 hour of
-            driving time.
+            The ceremony will take place at L'Hermitage Franschhoek Chateau
+            &amp; Villas, followed by the reception at Montmartre Chalets
+            &amp; Venue, Franschhoek. Parking is available on-site at both
+            venues.
           </p>
+
+          <div class="route-visual">
+            <div class="route-city">
+              <span class="route-dot"></span>
+              <span class="route-city-name">Cape Town</span>
+            </div>
+            <div class="route-path">
+              <svg
+                class="route-car"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path
+                  d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"
+                />
+              </svg>
+              <span class="route-meta">± 75 km &middot; ≈ 1 hour drive</span>
+            </div>
+            <a
+              class="route-city route-city--link"
+              href="https://www.google.com/maps/search/?api=1&query=L%27Hermitage%20Franschhoek%20Chateau%20%26%20Villas%2C%20Franschhoek%2C%20South%20Africa"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open directions to L'Hermitage Franschhoek Chateau & Villas in Google Maps"
+            >
+              <span class="route-dot route-dot--mid"></span>
+              <span class="route-city-name"
+                ><span class="route-city-main">L'Hermitage</span
+                ><span class="route-city-tag">Ceremony</span></span
+              >
+            </a>
+            <div class="route-path">
+              <svg
+                class="route-car"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path
+                  d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"
+                />
+              </svg>
+              <span class="route-meta">a short drive apart</span>
+            </div>
+            <a
+              class="route-city route-city--link"
+              href="https://www.google.com/maps/search/?api=1&query=Montmartre%20Chalets%20%26%20Venue%2C%20Franschhoek%2C%20South%20Africa"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open directions to Montmartre Chalets & Venue in Google Maps"
+            >
+              <span class="route-dot route-dot--end"></span>
+              <span class="route-city-name"
+                ><span class="route-city-main">Montmartre</span
+                ><span class="route-city-tag">Reception</span></span
+              >
+            </a>
+          </div>
+
           <h3>Accommodation</h3>
           <p>
-            A limited number of rooms have been reserved nearby for out-of-town
-            guests — details will be shared closer to the date.
+            Guests are kindly asked to arrange their own accommodation. As we
+            are familiar with the area, we would be happy to provide
+            recommendations for nearby hotels, guesthouses and other
+            accommodation options to assist with your planning.
           </p>
           <h3>Children</h3>
           <p>
-            We love your little ones, but our celebration will be an adults-only
-            affair, so that all our guests can relax and enjoy the evening.
+            While we adore your little ones,
+            <strong>our celebration will be an adults-only affair</strong>.
+            We kindly ask that you make the necessary arrangements for
+            childcare.
           </p>
         </div>
       </div>
@@ -348,7 +450,7 @@
           ><span></span>
         </div>
         <p class="rsvp-copy">
-          Please let us know if you'll be joining us by 31 October 2026.
+          Please let us know if you'll be joining us by 30 September 2026.
         </p>
       </div>
 
@@ -360,14 +462,16 @@
       <div class="gift-grid">
         <div class="gift-media">
           <img
-            src="css/img/web/gift.jpg"
-            alt="A gentle hand kiss between the couple, engagement ring in view"
+            src="css/img/web/full-8.jpg"
+            alt="A tender forehead kiss between the couple in the woods"
             loading="lazy"
           />
         </div>
         <div class="gift-copy">
           <p class="eyebrow">A Gift of Love</p>
-          <h2 class="section-title">Your presence is our greatest gift.</h2>
+          <h2 class="section-title">
+            Your presence is the greatest gift we could ask for.
+          </h2>
           <div class="divider">
             <span></span
             ><svg class="heart-icon" viewBox="0 0 24 24">
@@ -377,8 +481,9 @@
             ><span></span>
           </div>
           <p class="story-text">
-            Should you wish to contribute, we would appreciate a cash gift to
-            help us start our journey together.
+            If you would like to honour us with a gift, we would sincerely
+            appreciate a monetary contribution as we begin this new chapter
+            together.
           </p>
           <button class="btn btn-outline" id="giftDetailsBtn">
             View gift details
@@ -389,11 +494,11 @@
       <div class="gift-full" id="giftFull" hidden>
         <div class="gift-full-inner">
           <h3>Gifting details</h3>
-          <p>Account Name: <strong>Y &amp; M Wedding Fund</strong></p>
-          <p>Bank: <strong>Your Bank Name</strong></p>
-          <p>Account Number: <strong>0000 0000 0000</strong></p>
-          <p>Branch Code: <strong>000000</strong></p>
-          <p>Reference: <strong>Your Name</strong></p>
+          <p>Name of account: <strong>MN Ndalamba</strong></p>
+          <p>Account no.: <strong>63091798563</strong></p>
+          <p>Branch: <strong>Century City</strong></p>
+          <p>Branch code: <strong>200909</strong></p>
+          <p>Reference: <strong>Y &amp; M Wedding Fund</strong></p>
           <p class="gift-note">
             With love and gratitude — thank you for being part of our journey.
           </p>
@@ -428,12 +533,47 @@
     <section class="gallery" id="gallery">
       <p class="eyebrow center">A peek into our journey</p>
 
-      <div class="gallery-grid" id="galleryGrid">
+      <div class="album-grid" id="albumGrid">
+        <button
+          class="album-card"
+          id="engagementAlbumBtn"
+          aria-expanded="false"
+          aria-controls="galleryGrid"
+        >
+          <span class="album-cover">
+            <img
+              src="css/img/web/thumb-6.jpg"
+              alt="A gentle hand kiss between the couple"
+              loading="lazy"
+            />
+          </span>
+          <span class="album-title">Our Engagement</span>
+          <span class="album-subtitle">A Promise of Forever</span>
+        </button>
+
+        <div class="album-card album-card--soon" aria-disabled="true">
+          <span class="album-cover album-cover--soon">
+            <span class="album-soon-badge">Coming soon</span>
+          </span>
+          <span class="album-title">La Dot — Notre héritage</span>
+          <span class="album-subtitle">A Celebration of Love &amp; Heritage</span>
+        </div>
+
+        <div class="album-card album-card--soon" aria-disabled="true">
+          <span class="album-cover album-cover--soon">
+            <span class="album-soon-badge">Coming soon</span>
+          </span>
+          <span class="album-title">Our Wedding</span>
+          <span class="album-subtitle">The Day We Became One</span>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid" hidden>
+        <button class="gallery-item" data-index="12" data-caption="A gentle kiss">
+          <img src="css/img/web/thumb-6.jpg" alt="A gentle hand kiss between the couple" loading="lazy" />
+        </button>
         <button class="gallery-item" data-index="1" data-caption="Hand in hand">
           <img src="css/img/web/thumb-1.jpg" alt="The couple holding hands, engagement ring in view" loading="lazy" />
-        </button>
-        <button class="gallery-item" data-index="5" data-caption="Her favourite embrace">
-          <img src="css/img/web/thumb-2.jpg" alt="An embrace from behind among the trees" loading="lazy" />
         </button>
         <button class="gallery-item" data-index="6" data-caption="Caught smiling">
           <img src="css/img/web/thumb-3.jpg" alt="The bride-to-be smiling, leaning on her partner" loading="lazy" />
@@ -444,14 +584,8 @@
         <button class="gallery-item" data-index="11" data-caption="Heart to heart">
           <img src="css/img/web/thumb-5.jpg" alt="Hand resting over the heart, engagement ring in view" loading="lazy" />
         </button>
-        <button class="gallery-item" data-index="12" data-caption="A gentle kiss">
-          <img src="css/img/web/thumb-6.jpg" alt="A gentle hand kiss between the couple" loading="lazy" />
-        </button>
-      </div>
-
-      <div class="center-btn">
-        <button class="btn btn-outline" id="viewGalleryBtn">
-          View gallery
+        <button class="gallery-item" data-index="5" data-caption="Her favourite embrace">
+          <img src="css/img/web/thumb-2.jpg" alt="An embrace from behind among the trees" loading="lazy" />
         </button>
       </div>
     </section>
@@ -478,8 +612,9 @@
           </button>
           <div class="faq-answer">
             <p>
-              Seating is reserved for named guests only. If your invitation
-              includes a plus-one, it will be addressed accordingly.
+              Seating is reserved for the guests named on your invitation. If
+              your invitation includes a plus-one, this will be indicated
+              accordingly.
             </p>
           </div>
         </div>
@@ -499,8 +634,10 @@
           </button>
           <div class="faq-answer">
             <p>
-              While we love your little ones, our celebration will be an
-              adults-only affair.
+              While we adore your little ones,
+              <strong>our celebration will be an adults-only affair</strong>.
+              We kindly ask that you make the necessary arrangements for
+              childcare.
             </p>
           </div>
         </div>
@@ -520,8 +657,11 @@
           </button>
           <div class="faq-answer">
             <p>
-              Our dress code is Formal / Elegant. Think soft, muted tones — and
-              comfortable shoes for the lawn.
+              Our dress code is Formal / Elegant. We invite you to embrace
+              soft, muted and sophisticated tones that complement the overall
+              aesthetic of our day. As portions of the celebration will take
+              place on the lawn, we recommend choosing comfortable shoes
+              suitable for grass.
             </p>
           </div>
         </div>
@@ -540,7 +680,7 @@
             </svg>
           </button>
           <div class="faq-answer">
-            <p>Kindly RSVP by 31 October 2026 using the RSVP button above.</p>
+            <p>Kindly RSVP by 30 September 2026 using the RSVP button above.</p>
           </div>
         </div>
       </div>
@@ -594,7 +734,7 @@
               <path
                 d="M12 21s-7.5-4.8-10-9.6C.4 8 2 4 6 4c2.2 0 3.8 1.2 6 4 2.2-2.8 3.8-4 6-4 4 0 5.6 4 4 7.4C19.5 16.2 12 21 12 21z"
               /></svg
-            >Mash2026
+            >#Mash 2026
           </p>
 
           <div class="footer-social">
@@ -692,7 +832,7 @@
         <h2 class="section-title center" id="rsvpModalTitle">
           We hope you can join us
         </h2>
-        <p class="rsvp-modal-sub">Please respond by 31 October 2026</p>
+        <p class="rsvp-modal-sub">Please respond by 30 September 2026</p>
 
         <form id="rsvpForm" class="rsvp-form" novalidate>
           <div class="form-row">
@@ -736,19 +876,17 @@
             <select id="rsvpGuests" name="guests">
               <option value="1">1</option>
               <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
             </select>
           </div>
 
           <div class="form-row">
             <label for="rsvpDietary">Dietary requirements</label>
-            <input
-              type="text"
-              id="rsvpDietary"
-              name="dietary"
-              placeholder="e.g. vegetarian, gluten-free, none"
-            />
+            <select id="rsvpDietary" name="dietary">
+              <option value="">Select one</option>
+              <option value="Vegetarian">Vegetarian</option>
+              <option value="Vegan">Vegan</option>
+              <option value="None">None</option>
+            </select>
           </div>
 
           <div class="form-row">
