@@ -6,7 +6,7 @@
 //   RESEND_API_KEY     — secret API key from resend.com/api-keys
 //   RSVP_NOTIFY_EMAIL   — inbox that should receive each RSVP notification
 //
-// Sends from webify.joburg, a domain verified on this Resend account, so
+// Sends from yan-mashinda.co.za, a domain verified on this Resend account, so
 // notifications can go to any recipient (not just the account owner).
 
 function escapeHtml(value) {
@@ -101,7 +101,7 @@ export default async function handler(req, res) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Y & M Wedding RSVP <rsvp@webify.joburg>",
+        from: "Y & M Wedding RSVP <rsvp@yan-mashinda.co.za>",
         to: notifyEmail,
         reply_to: email,
         subject: `RSVP — ${name} (${attendingWord})`,
